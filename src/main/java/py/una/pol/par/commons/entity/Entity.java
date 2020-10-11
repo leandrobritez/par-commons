@@ -10,6 +10,9 @@ public abstract class Entity<T> {
     T id;
     String name;
 
+    public Entity() {
+    }
+    
     /**
      *
      * @return

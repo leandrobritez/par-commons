@@ -20,6 +20,9 @@ public abstract class BaseEntity<T> extends Entity<T> {
         isModified = false;
     }
 
+    public BaseEntity() {
+    }
+
     /**
      *
      * @return

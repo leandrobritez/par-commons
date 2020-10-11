@@ -9,12 +9,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.sql.*;
 
 /**
  *
  * @author mauricio
  */
 public class DBUtils {
+   
 
     public static Connection getConnection() throws SQLException {
         try {
@@ -22,7 +24,7 @@ public class DBUtils {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBUtils.class.getName()).log(Level.SEVERE, null, ex);
         }
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/par.online", "postgres", "sa123");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "kuki1234");
         return conn;
     }
 
